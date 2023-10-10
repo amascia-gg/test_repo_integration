@@ -20,6 +20,7 @@ jobs:
       - run:
           name: "Say hello again"
           command: "git rev-parse HEAD^"
+          when: always
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
