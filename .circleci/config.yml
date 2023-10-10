@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo ${pipeline.git.base_revision}"
+          command: "env | grep 'pipeline.git.base_revision' | awk -F= '{print $2}'"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
