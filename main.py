@@ -30,14 +30,11 @@ from helpers import (
 from search_helper import get_prod_link, poorvika_search
 
 # config
-bot_token = os.environ.get("TOKEN", "6137653641:POUC1Plh0GFXtbJaVaQeXv9NTnVDaybiDRE")
-api_hash = os.environ.get("HASH", "1227a714a157e5987cc81fa81a7859c3")
-api_id = os.environ.get("ID", "20912998")
+bot_token = os.environ.get("TOKEN")
+api_hash = os.environ.get("HASH")
+api_id = os.environ.get("ID")
 u_name = os.environ.get("BOT_USERNAME", "PoorvikaSearchBot")
-db_url = os.environ.get(
-    "DATABASE_URL",
-    "mongodb+srv://poorvika:poorvika@cluster0.ujsdn4o.mongodb.net/?retryWrites=true&w=majority",
-)
+db_url = os.environ.get("DATABASE_URL")
 admin_list = os.environ.get(
     "ADMINS_ID",
     [1458096575],
